@@ -1,23 +1,25 @@
-<header class="text-gray-600 body-font fixed z-100" style="position: relative;">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <span class="ml-3 text-xl">AM Educon</span>
-        </a>
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-gray-900 justify-center">
+<nav class="bg-white shadow-lg">
+    <div class="md:flex items-center justify-between py-5 px-8 md:px-12">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl text-gray-800 md:text-3xl" style="font-family: Poppins;">
+                <a href="">AM Educon</a>
+            </div>
+            <div class="md:hidden" id="menuToggle">
+                <button type="button"
+                    class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu hidden flex flex-col md:flex-row md:block mx-1 " id="sidebar">
             <a href="" class="mr-5 hover:text-gray-400">Home</a>
-            <a href="/about" class="mr-5 hover:text-gray-400">Our Company</a>
-            <a href="" class="mr-5 hover:text-gray-400">Services</a>
-            <a href="" class="mr-5 hover:text-gray-400">News</a>
-            <a href="" class="mr-5 hover:text-gray-400">Careers</a>
-        </nav>
-        <button
-            class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-        </button>
+            <a href="#" class="mr-5 hover:text-gray-400">Our Company</a>
+            <a href="#" class="mr-5 hover:text-gray-400">Services</a>
+            <a href="#" class="mr-5 hover:text-gray-400">News</a>
+            <a href="#" class="mr-5 hover:text-gray-400">Careers</a>
+            <a href="/contact" class="mr-5 hover:text-gray-400">Contact Us</a>
+        </div>
     </div>
-</header>
+</nav>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
